@@ -1,0 +1,19 @@
+dbt_learning:
+  outputs:
+    dev:
+      account: QWRKIXY-HH95562
+      database: BANKING_DB
+      role: ACCOUNTADMIN
+      schema: RAW_DATA
+      threads: 1
+      type: snowflake
+      user: SHYAM
+      private_key_path: C:\Users\Shyam Kumar Dasari\.dbt\rsa_key.pem
+      private_key_passphrase: ""   
+      warehouse: COMPUTE_WH
+  target: dev
+
+
+
+
+      
