@@ -32,7 +32,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_learn_repos:
    staging: 
+    +database: BANKING_DB
+    +SCHEMA: RAW_DATA
     +materialized: view
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    
+   cleansing: 
+    +database: BANKING_DB
+    +materialized: TABLE
+
+    
